@@ -1,20 +1,29 @@
 package com.abid.sinkingship.controller;
 
+import com.abid.sinkingship.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
 public class UserController {
 
+    @Autowired
+    UserService userService;
+
     @GetMapping("/getUsers")
     public String getUser() {
-        System.out.println("Getting users");
+        //System.out.println("Getting users");
+
+        // Need an interceptor now for this method call.
+        userService.giveUser();
+
         return "Abid";
     }
 
     @PostMapping("/saveUsers")
     public String saveUser(){
-        System.out.println("Saving user");
+
         return "Saving User";
     }
 

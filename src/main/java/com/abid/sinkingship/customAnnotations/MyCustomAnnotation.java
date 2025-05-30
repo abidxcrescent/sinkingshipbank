@@ -11,7 +11,8 @@ import java.lang.annotation.Target;
     a. RetentionPolicy
         SOURCE(it removed when code is compiled)
         CLASS(it is present after code is compiled .java to .class)
-        RUNTIME(it is present )
+        RUNTIME(it is present during runtime as well)
+    b. ElementType: METHOD CONSTRUCTOR PARAMETER FIELD
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
