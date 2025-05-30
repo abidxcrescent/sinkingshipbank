@@ -1,4 +1,4 @@
-package com.abid.sinkingship.config;
+package com.abid.sinkingship.customerInterceptor;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

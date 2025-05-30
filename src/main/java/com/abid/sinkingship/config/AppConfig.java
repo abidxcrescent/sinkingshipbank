@@ -1,5 +1,6 @@
 package com.abid.sinkingship.config;
 
+import com.abid.sinkingship.customerInterceptor.MyCustomInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
